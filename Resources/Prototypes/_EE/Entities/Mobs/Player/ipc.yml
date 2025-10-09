@@ -52,7 +52,7 @@
       Critical: BorgCrit
       Dead: BorgDead
   - type: TypingIndicator
-    proto: robot
+    proto: ipc # Box change - Swaps out the silicon indicator proto for the IPC one
   - type: Destructible
     thresholds:
       - trigger:

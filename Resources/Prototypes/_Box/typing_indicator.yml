@@ -1,0 +1,4 @@
+- type: typingIndicator
+  id: ipc
+  typingState: ipc0
+  idleState: ipc3
