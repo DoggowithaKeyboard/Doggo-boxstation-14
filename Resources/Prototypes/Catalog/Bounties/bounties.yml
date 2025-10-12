@@ -8,6 +8,7 @@
     whitelist:
       components:
       - XenoArtifact
+      - Artifact # Box Change - IMP - Duo XenoArch
 
 - type: cargoBounty
   id: BountyBaseballBat

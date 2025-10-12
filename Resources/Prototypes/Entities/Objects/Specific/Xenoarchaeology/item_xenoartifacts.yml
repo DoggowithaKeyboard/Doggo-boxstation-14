@@ -1,7 +1,10 @@
 ﻿- type: entity
-  parent: [BaseItem, BaseXenoArtifact]
-  id: BaseXenoArtifactItem
-  name: artifact
+  # Box Change Start - Imp Duo XenoArch
+  parent: [BaseItem, BaseXAEXenoArtifact] # XenoArtifact > XAEXenoartifact
+  id: BaseXAEXenoArtifactItem # XenoArtifact > XAEXenoartifact
+  name: reticulated artifact #IMP reticulated
+  suffix: Imp
+  # Box Change End
   description: A strange artifact from time unknown. Looks like a good time. Fits in hand perfectly.
   abstract: true
   noSpawn: true
@@ -50,7 +53,7 @@
     sprite: Objects/Specific/Xenoarchaeology/item_artifacts.rsi
     heldPrefix: ano01
   - type: Construction
-    graph: Artifact
+    graph: XAEArtifact # Box Change - Artifact > XAEArtifact
     node: done
   - type: XenoArtifact
     effectsTable: !type:GroupSelector
@@ -63,9 +66,11 @@
         weight: 2
 
 - type: entity
-  parent: BaseXenoArtifactItem
-  id: ComplexXenoArtifactItem
-  suffix: Hand-Sized
+  # Box Change Start - Imp Duo XenoArch
+  parent: BaseXAEXenoArtifactItem # XenoArtifact > XAEXenoartifact
+  id: ComplexXAEXenoArtifactItem # XenoArtifact > XAEXenoartifact
+  suffix: Hand-Sized, Imp # Add Imp Suffix
+  # Box Change End
   components:
   - type: XenoArtifact
     nodeCount:

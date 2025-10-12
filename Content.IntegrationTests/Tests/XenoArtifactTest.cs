@@ -9,10 +9,11 @@ namespace Content.IntegrationTests.Tests;
 public sealed class XenoArtifactTest
 {
     [TestPrototypes]
+// Box Change - BaseXenoArtifact > BaseXAEXenoArtifact
     private const string Prototypes = @"
 - type: entity
   id: TestArtifact
-  parent: BaseXenoArtifact
+  parent: BaseXAEXenoArtifact
   name: artifact
   components:
   - type: XenoArtifact
@@ -22,7 +23,7 @@ public sealed class XenoArtifactTest
 
 - type: entity
   id: TestGenArtifactFlat
-  parent: BaseXenoArtifact
+  parent: BaseXAEXenoArtifact
   name: artifact
   components:
   - type: XenoArtifact
@@ -41,7 +42,7 @@ public sealed class XenoArtifactTest
 
 - type: entity
   id: TestGenArtifactTall
-  parent: BaseXenoArtifact
+  parent: BaseXAEXenoArtifact
   name: artifact
   components:
   - type: XenoArtifact
