@@ -248,3 +248,22 @@
   id: 27
   time: '2025-10-09T20:13:23.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/43
+- author: CollectionOfBones128
+  changes:
+  - message: Added Natural Artifacts, which are locked to one node and require scanning.
+    type: Add
+  - message: Current artifacts have been renamed to Reticulated Artifacts
+    type: Tweak
+  - message: You can choose to buy Natural Artifacts, Reticulated Artifacts, or a
+      random one from Cargo. It's cheaper to buy a random artifact.
+    type: Tweak
+  - message: Reticulated Artifacts now have a larger window of time to work with
+    type: Tweak
+  - message: Reticulated Artifacts can no longer get a death trigger.
+    type: Remove
+  - message: Reticulated artifacts requiring radiation now activate from ambient radiation
+      and reagents, similar to natural artifacts
+    type: Fix
+  id: 28
+  time: '2025-10-12T06:35:09.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/44
