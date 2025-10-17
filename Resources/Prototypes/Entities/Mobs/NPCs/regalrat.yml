@@ -106,7 +106,6 @@
   - type: RatKing
     hungerPerArmyUse: 25
     hungerPerDomainUse: 50
-  - type: Rummager # Box Change - Port Rodentia from Funky/DV - # DeltaV: Make rummaging a generic component
   - type: MobsterAccent
   - type: Speech
     speechVerb: SmallMob
@@ -313,11 +312,15 @@
   table: !type:GroupSelector
     children:
     - id: RandomSpawner100
-      weight: 66
+      weight: 66 # Box Change - Rodentia Rummaging - 66 > 70
     - id: FoodCheese
       weight: 28
-    - id: IngotGold1
-      weight: 5
+    # Box Change Start - Rodentia Rummaging
+    #- id: IngotGold1
+    #  weight: 5
+    - id: RandomSnacks
+      weight: 6
+    # Box Change End
 
 - type: entity
   parent: BaseAction

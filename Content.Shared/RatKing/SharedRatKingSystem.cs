@@ -1,4 +1,3 @@
-using Content.Shared.Abilities; // Box Change - Port Funky/DV Rodentia
 using Content.Shared.Actions;
 using Content.Shared.Actions.Components;
 using Robust.Shared.Prototypes;
