@@ -1,12 +1,9 @@
 - type: entity
-  #name: syndiroach #Harmony change - fixed order
+  name: syndiroach
   id: MobMothSyndy
   parent: MobMothroach
-  #Harmony change start - adds suffix fixes order.
-  name: syndiroach
   suffix: Harmony
-  #Harmony Change, adds suffix and fixes order.
-  description: Explosive mothroach. #Harmony change - moth --> mothroach.
+  description: Explosive mothroach. # Harmony change - moth -> mothroach
   components:
   - type: Sprite
     sprite: _Goobstation/Mobs/Animals/syndiroach.rsi

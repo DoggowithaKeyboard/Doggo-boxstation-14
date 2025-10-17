@@ -34,6 +34,7 @@
     - Inorganic
     - Silicon
     - HumanoidSilicon # Harmony Change, IPCs
+  - type: ShowAccessReaderSettings
 
 - type: entity
   parent: [ClothingEyesBase, ShowMedicalIcons]
