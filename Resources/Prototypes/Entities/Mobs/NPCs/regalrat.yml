@@ -102,10 +102,10 @@
       - CannotSuicide
       - FootstepSound
   - type: NoSlip
+  - type: Rummager
   - type: RatKing
     hungerPerArmyUse: 25
     hungerPerDomainUse: 50
-  - type: Rummager # Box Change - Port Rodentia from Funky/DV - # DeltaV: Make rummaging a generic component
   - type: MobsterAccent
   - type: Speech
     speechVerb: SmallMob
@@ -307,18 +307,20 @@
     sprite: Mobs/Effects/onfire.rsi
     normalState: Mouse_burning
 
-- type: weightedRandomEntity
+- type: entityTable
   id: RatKingLoot
-  weights:
-  # Box Change Start - Ports Rodentia from Funky/DV - DeltaV: Rebalanced for Rodentia rummaging because we don't have Rat King
-    # RandomSpawner100: 66 #garbage
-    # FoodCheese: 28 #food
-    # IngotGold1: 5 #loot
-    RandomSpawner100: 70 #garbage
-    FoodCheeseSlice: 15 #food
-    RandomSnacks: 10
-    RandomFoodSingle: 5
-  # Box Change End
+  table: !type:GroupSelector
+    children:
+    - id: RandomSpawner100
+      weight: 66 # Box Change - Rodentia Rummaging - 66 > 70
+    - id: FoodCheese
+      weight: 28
+    # Box Change Start - Rodentia Rummaging
+    #- id: IngotGold1
+    #  weight: 5
+    - id: RandomSnacks
+      weight: 6
+    # Box Change End
 
 - type: entity
   parent: BaseAction

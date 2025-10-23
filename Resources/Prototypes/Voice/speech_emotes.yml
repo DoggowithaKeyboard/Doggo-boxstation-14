@@ -217,7 +217,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: [barks.]
+  chatMessages: ["chat-emote-msg-bark"]
   chatTriggers:
   - bark
   - barks
@@ -235,7 +235,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: [snarls.]
+  chatMessages: ["chat-emote-msg-snarl"]
   chatTriggers:
   - snarl
   - snarls
@@ -253,7 +253,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: [whines.]
+  chatMessages: ["chat-emote-msg-whine"]
   chatTriggers:
   - whine
   - whines
@@ -271,7 +271,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: [howls.]
+  chatMessages: ["chat-emote-msg-howl"]
   chatTriggers:
   - howl
   - howls
@@ -289,7 +289,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: [growls.]
+  chatMessages: ["chat-emote-msg-growl"]
   chatTriggers:
   - growl
   - growls
