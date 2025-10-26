@@ -267,3 +267,20 @@
   id: 28
   time: '2025-10-12T06:35:09.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/44
+- author: CollectionOfBones128
+  changes:
+  - message: Vox are now mechanically a synthetic lifeform, meaning they can use synthetic
+      reagents like IPCs can.
+    type: Tweak
+  id: 29
+  time: '2025-10-26T20:26:54.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/48
+- author: CollectionOfBones128
+  changes:
+  - message: Added new guidebook entries for SynthChem
+    type: Add
+  - message: Added a new guidebook entry for the Synthanol-based drinks.
+    type: Add
+  id: 30
+  time: '2025-10-25T21:59:27.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/47
