@@ -284,3 +284,12 @@
   id: 30
   time: '2025-10-25T21:59:27.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/47
+- author: CollectionOfBones128
+  changes:
+  - message: Added three new cryogenic chemicals for Synthetics.
+    type: Add
+  - message: Cryostabilized Defragmenter's recipe has been adjusted
+    type: Tweak
+  id: 31
+  time: '2025-10-29T18:05:43.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/49
