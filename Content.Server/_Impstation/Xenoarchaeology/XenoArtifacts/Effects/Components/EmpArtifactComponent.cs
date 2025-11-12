@@ -16,5 +16,5 @@ public sealed partial class EmpArtifactComponent : Component
     public float EnergyConsumption = 1000000;
 
     [DataField("disableDuration"), ViewVariables(VVAccess.ReadWrite)]
-    public float DisableDuration = 60f;
+    public TimeSpan DisableDuration = TimeSpan.FromSeconds(60); // Box Change - Float > Timespan - Upstream EMP Predict
 }

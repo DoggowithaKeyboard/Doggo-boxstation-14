@@ -1,6 +1,6 @@
 using Content.Server.Electrocution;
 using Content.Server.Popups;
-using Content.Server.Power.Components;
+using Content.Shared.Power.Components; // Box Change - BatteryComponent was moved to Shared
 using Content.Server.Power.EntitySystems;
 using Content.Shared.Electrocution;
 using Robust.Shared.Random;
