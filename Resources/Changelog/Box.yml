@@ -293,3 +293,23 @@
   id: 31
   time: '2025-10-29T18:05:43.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/49
+- author: CollectionOfBones128
+  changes:
+  - message: You can no longer accidentally make Carbon Monoxide when intending to
+      make Inaprovaline or Sodium Carbonate
+    type: Fix
+  - message: Carbon Monoxide now requires stirring to make
+    type: Tweak
+  - message: Recal, Degreaser, SOI Sapphire, Emergency Defragmentor, Liquid Solder,
+      and Computer Coolant have had their output increased
+    type: Tweak
+  - message: The recipe for Synthanol no longer consumes Plasma
+    type: Tweak
+  - message: Smart Metal now needs less Activated Silicon
+    type: Tweak
+  - message: An alternate recipe for Activated Silicon has been added, allowing you
+      to convert silicon into it directly if you already have some.
+    type: Add
+  id: 32
+  time: '2025-11-12T07:03:43.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/50
