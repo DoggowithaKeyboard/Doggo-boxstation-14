@@ -75,7 +75,6 @@
         effectProto: StatusEffectDrowsiness
         time: 4
         type: Add
-        refresh: false
       - !type:ModifyStatusEffect
         conditions:
         - !type:ReagentThreshold
