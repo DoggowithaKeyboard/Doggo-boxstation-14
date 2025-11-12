@@ -8,9 +8,9 @@
     role: JobSecurityOfficer
     time: 4h # Harmony: 5h -> 2h # Box - 2h > 4h
   # Box Change Start
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 6h
+  - !type:DepartmentTimeRequirement
+    department: Security
+    time: 6h
   # Box Change End
   startingGear: DetectiveGear
   icon: "JobIconDetective"
