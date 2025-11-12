@@ -6,7 +6,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 18000 # Box: 5 hrs
+      time: 5h # Harmony: 2.5h -> 1h # Box - 1h > 5h
   startingGear: SecurityOfficerGear
   icon: "JobIconSecurityOfficer"
   supervisors: job-supervisors-hos

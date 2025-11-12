@@ -6,20 +6,22 @@
   requirements:
     - !type:RoleTimeRequirement
       role: JobWarden
-      time: 21600 # Box: 6hrs
-    # Box Change Start
+      time: 6h # Harmony: 1h -> 3h # Box - 3h > 6h
+    # Harmony start
+      # Box Change Start - Uncomment Detective, set to 2hr
     - !type:RoleTimeRequirement
       role: JobDetective
-      time: 7200 # 2hrs
-    # Box Change End
-    - !type:RoleTimeRequirement
-      role: JobSecurityOfficer
-      time: 0 # Harmony: 0 hrs
+      time: 2h #knowing how to use the tools is important
+      # Box Change End
+    # - !type:RoleTimeRequirement
+    #   role: JobSecurityOfficer
+    #   time: 18000 #5 hrs
+    # Harmony end
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 36000 # Harmony: 10 hrs
+      time: 10h
     - !type:OverallPlaytimeRequirement
-      time: 54000 # Box: 15 hrs
+      time: 15h # Harmony: 10h -> 12h # Box - 12h > 15h
   weight: 10
   startingGear: HoSGear
   icon: "JobIconHeadOfSecurity"

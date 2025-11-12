@@ -4,16 +4,16 @@
   description: job-description-warden
   playTimeTracker: JobWarden
   requirements:
-# Harmony Change
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 28800 # Box: 8 hrs
-# End Harmony
-# Box Change Start
+    # Harmony start
+      # Box Change Start - Uncomments, sets to 6h
     - !type:RoleTimeRequirement
       role: JobSecurityOfficer
-      time: 21600 # 6 hrs
-# End Box Change
+      time: 6h
+      # Box Change End
+    # Harmony end
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 8h # Harmony: 10h -> 4h # Box - 4h > 8h
   weight: 5
   startingGear: WardenGear
   icon: "JobIconWarden"

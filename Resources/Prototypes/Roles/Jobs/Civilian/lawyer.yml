@@ -5,11 +5,11 @@
   playTimeTracker: JobLawyer
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 0 # 0 hrs
+      time: 0 # Harmony: 2.5h -> 0
     # Box Change Start
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 7200 # 2 hours
+      time: 2h
     # Box Change End
   startingGear: LawyerGear
   icon: "JobIconLawyer"

@@ -6,7 +6,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Science
-      time: 18000 # Box: 5 hrs
+      time: 5h # 2.5h -> 0 # Box Change - 0h > 5h
   startingGear: ScientistGear
   icon: "JobIconScientist"
   supervisors: job-supervisors-rd
