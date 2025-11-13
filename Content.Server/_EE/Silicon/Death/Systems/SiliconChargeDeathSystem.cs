@@ -1,4 +1,4 @@
-using Content.Server.Power.Components;
+using Content.Shared.Power.Components; // Box Change - BatteryComponent was moved to Shared
 using Content.Shared._EE.Silicon.Systems;
 using Content.Shared.Bed.Sleep;
 using Content.Server._EE.Silicon.Charge;

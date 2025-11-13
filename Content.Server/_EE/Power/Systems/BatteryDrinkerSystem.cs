@@ -1,5 +1,5 @@
 using System.Linq;
-using Content.Server.Power.Components;
+using Content.Shared.Power.Components; // Box Change - BatteryComponent was moved to Shared
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.DoAfter;
 using Content.Shared.PowerCell.Components;

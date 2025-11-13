@@ -1,4 +1,4 @@
-using Content.Server.Power.Components;
+using Content.Shared.Power.Components; // Box Change - BatteryComponent was moved to Shared
 using Content.Server.Power.EntitySystems;
 using Content.Server.Xenoarchaeology.XenoArtifacts.Effects.Components;
 using Content.Server.Xenoarchaeology.XenoArtifacts.Events;

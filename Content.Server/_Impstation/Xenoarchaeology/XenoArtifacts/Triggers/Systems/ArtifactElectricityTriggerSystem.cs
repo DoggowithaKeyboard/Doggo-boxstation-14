@@ -1,4 +1,4 @@
-using Content.Server.Emp;
+using Content.Shared.Emp; // Box Change - Upstream moved EMP to Shared
 using Content.Server.Power.Components;
 using Content.Server.Power.Events;
 using Content.Server.Xenoarchaeology.XenoArtifacts.Triggers.Components;

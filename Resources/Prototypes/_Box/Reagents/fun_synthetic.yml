@@ -15,7 +15,6 @@
         effectProto: StatusEffectSeeingRainbow
         time: 16
         type: Add
-        refresh: false
 
 # Bitflipper
 - type: reagent
@@ -74,7 +73,6 @@
         effectProto: StatusEffectSeeingRainbow
         type: Add
         time: 5
-        refresh: false
 
 # Surge - From SS13 Paradise
 - type: reagent

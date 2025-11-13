@@ -6,11 +6,11 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 0 #0 hrs
+      time: 0 # Harmony: 5h -> 0
   # Box Change Start
     - !type:RoleTimeRequirement
       role: JobMedicalDoctor
-      time: 18000 # 5 hrs
+      time: 5h
   # Box Change End
   startingGear: ChemistGear
   icon: "JobIconChemist"

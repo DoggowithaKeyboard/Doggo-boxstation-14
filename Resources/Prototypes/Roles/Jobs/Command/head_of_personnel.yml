@@ -4,30 +4,37 @@
   description: job-description-hop
   playTimeTracker: JobHeadOfPersonnel
   requirements:
+    # Harmony start
+      # Box Change Start - Uncomment, set to 2hr
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 7200 # Box: 2 hours
+      time: 2h
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 7200 # Box: 2 hours
+      time: 2h
+    - !type:DepartmentTimeRequirement
+      department: Science
+      time: 2h
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 7200 # Box: 2 hrs
+      time: 2h
+      # Box Change End
     - !type:DepartmentTimeRequirement
       department: Civilian
-      time: 28800 # Box: 8 hrs
+      time: 8h # Box Change - 4h -> 8h
+  # Harmony end
     - !type:DepartmentTimeRequirement
       department: Command
-      time: 7200 # Box: 2 hours
+      time: 2h # Harmony: 2.5h -> 4h # Box - 4h -> 2h
     # Box Change Start
     - !type:DepartmentTimeRequirement
       department: Cargo
-      time: 7200 # 2 hours
+      time: 2h
     - !type:DepartmentTimeRequirement
       department: Science
-      time: 7200 # 2 hours
+      time: 2h
     - !type:OverallPlaytimeRequirement
-      time: 43200 #12 hrs
+      time: 12h
     # Box Change End
   weight: 20
   startingGear: HoPGear
