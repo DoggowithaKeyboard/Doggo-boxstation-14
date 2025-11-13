@@ -313,3 +313,11 @@
   id: 32
   time: '2025-11-12T07:03:43.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/50
+- author: BlueMoon059
+  changes:
+  - message: IPCs no longer have a 6th sense for admins right-clicking on them, and
+      now interact like any other crewmember. Namely not at all.
+    type: Fix
+  id: 33
+  time: '2025-11-13T15:40:50.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/54
