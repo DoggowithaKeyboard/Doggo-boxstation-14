@@ -21,32 +21,36 @@ public sealed class SharedSiliconChargeSystem : EntitySystem
         SubscribeLocalEvent<SiliconComponent, ComponentInit>(OnSiliconInit);
         SubscribeLocalEvent<SiliconComponent, SiliconChargeStateUpdateEvent>(OnSiliconChargeStateUpdate);
         SubscribeLocalEvent<SiliconComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovespeed);
-        SubscribeLocalEvent<SiliconComponent, ItemSlotInsertAttemptEvent>(OnItemSlotInsertAttempt);
-        SubscribeLocalEvent<SiliconComponent, ItemSlotEjectAttemptEvent>(OnItemSlotEjectAttempt);
-        SubscribeLocalEvent<SiliconComponent, TryingToSleepEvent>(OnTryingToSleep);    
+// Box change, Unscubscribes from events that don't exist in this context anymore
+        // SubscribeLocalEvent<SiliconComponent, ItemSlotInsertAttemptEvent>(OnItemSlotInsertAttempt);
+        // SubscribeLocalEvent<SiliconComponent, ItemSlotEjectAttemptEvent>(OnItemSlotEjectAttempt);
+// Box change ends
+        SubscribeLocalEvent<SiliconComponent, TryingToSleepEvent>(OnTryingToSleep);
     }
 
-    private void OnItemSlotInsertAttempt(EntityUid uid, SiliconComponent component, ref ItemSlotInsertAttemptEvent args)
-    {
-        if (args.Cancelled
-            || !TryComp<PowerCellSlotComponent>(uid, out var cellSlotComp)
-            || !_itemSlots.TryGetSlot(uid, cellSlotComp.CellSlotId, out var cellSlot)
-            || cellSlot != args.Slot || args.User != uid)
-            return;
+// Box change starts: lets IPCs remove and insert their own power cells
+    // private void OnItemSlotInsertAttempt(EntityUid uid, SiliconComponent component, ref ItemSlotInsertAttemptEvent args)
+    // {
+    //     if (args.Cancelled
+    //         || !TryComp<PowerCellSlotComponent>(uid, out var cellSlotComp)
+    //         || !_itemSlots.TryGetSlot(uid, cellSlotComp.CellSlotId, out var cellSlot)
+    //         || cellSlot != args.Slot || args.User != uid)
+    //         return;
 
-        args.Cancelled = true;
-    }
+    //     args.Cancelled = true;
+    // }
 
-    private void OnItemSlotEjectAttempt(EntityUid uid, SiliconComponent component, ref ItemSlotEjectAttemptEvent args)
-    {
-        if (args.Cancelled
-            || !TryComp<PowerCellSlotComponent>(uid, out var cellSlotComp)
-            || !_itemSlots.TryGetSlot(uid, cellSlotComp.CellSlotId, out var cellSlot)
-            || cellSlot != args.Slot || args.User != uid)
-            return;
+    // private void OnItemSlotEjectAttempt(EntityUid uid, SiliconComponent component, ref ItemSlotEjectAttemptEvent args)
+    // {
+    //     if (args.Cancelled
+    //         || !TryComp<PowerCellSlotComponent>(uid, out var cellSlotComp)
+    //         || !_itemSlots.TryGetSlot(uid, cellSlotComp.CellSlotId, out var cellSlot)
+    //         || cellSlot != args.Slot || args.User != uid)
+    //         return;
 
-        args.Cancelled = true;
-    }
+    //     args.Cancelled = true;
+    // }
+// Box change ends
 
     private void OnSiliconInit(EntityUid uid, SiliconComponent component, ComponentInit args)
     {
