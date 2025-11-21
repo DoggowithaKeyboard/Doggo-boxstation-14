@@ -336,3 +336,11 @@
   id: 35
   time: '2025-11-14T11:59:38.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/55
+- author: BlueMoon059
+  changes:
+  - message: Adds new lobby art by Baxter of Cyrillus giving a space carp what it
+      deserves.
+    type: Add
+  id: 36
+  time: '2025-11-21T16:09:27.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/56
