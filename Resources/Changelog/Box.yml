@@ -321,3 +321,18 @@
   id: 33
   time: '2025-11-13T15:40:50.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/54
+- author: BlueMoon059
+  changes:
+  - message: The QM and Cargo Techs can now wear salvage boots, find them in your
+      loadout screen.
+    type: Add
+  id: 34
+  time: '2025-11-21T15:53:02.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/57
+- author: Dinoguy12349
+  changes:
+  - message: IPCs can now replace their own batteries without external assistance
+    type: Tweak
+  id: 35
+  time: '2025-11-14T11:59:38.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/55
