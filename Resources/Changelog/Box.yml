@@ -344,3 +344,11 @@
   id: 36
   time: '2025-11-21T16:09:27.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/56
+- author: BlueMoon059
+  changes:
+  - message: The upstream (harmony) jetpack nerfs have been reverted. Jetpacks now
+      accelerate at a rate of 1 instead of 0.5.
+    type: Tweak
+  id: 37
+  time: '2025-11-21T16:24:51.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/58
