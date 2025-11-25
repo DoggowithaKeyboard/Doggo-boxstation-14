@@ -352,3 +352,13 @@
   id: 37
   time: '2025-11-21T16:24:51.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/58
+- author: BlueMoon059
+  changes:
+  - message: The Luxury Kinetic Revolver now fits inside combat boots and jackboots.
+    type: Add
+  - message: The Luxury Kinetic Revolver is no longer bigger than the Proto-Kinetic
+      Accelerator
+    type: Fix
+  id: 38
+  time: '2025-11-25T16:55:28.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/59
