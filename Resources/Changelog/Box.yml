@@ -369,3 +369,13 @@
   id: 39
   time: '2025-11-30T00:45:27.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/60
+- author: Dinoguy12349
+  changes:
+  - message: IPC topicals have been removed from medicine lockers
+    type: Remove
+  - message: IPC topicals can now be acquired from the standard versions of the nanomed
+      and nanomed+
+    type: Tweak
+  id: 40
+  time: '2025-12-04T14:41:02.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/61
