@@ -379,3 +379,10 @@
   id: 40
   time: '2025-12-04T14:41:02.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/61
+- author: CollectionOfBones128
+  changes:
+  - message: IPCs now have more agency when they have no power.
+    type: Tweak
+  id: 41
+  time: '2025-12-25T21:07:35.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/62
