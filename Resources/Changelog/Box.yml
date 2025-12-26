@@ -386,3 +386,14 @@
   id: 41
   time: '2025-12-25T21:07:35.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/62
+- author: BlueMoon059
+  changes:
+  - message: IPCs now have unique flavor text for their injuries, no longer using
+      the organic injury system.
+    type: Add
+  - message: IPCs now correctly track their cold, radiation, and caustic injuries
+      and show them when you visually inspect them.
+    type: Fix
+  id: 42
+  time: '2025-12-26T15:25:25.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/63
