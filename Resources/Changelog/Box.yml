@@ -404,3 +404,18 @@
   id: 43
   time: '2025-12-26T16:26:07.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/64
+- author: BlueMoon059
+  changes:
+  - message: Adds new lobby art of Nyx, Pyrrha, Hears, Altair, Cy, Katya, and Anya
+      by Faeturtle.
+    type: Add
+  id: 44
+  time: '2025-12-29T18:25:31.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/66
+- author: BlueMoon059
+  changes:
+  - message: Changes the wording on the IPC deathgasp.
+    type: Tweak
+  id: 45
+  time: '2025-12-29T18:25:01.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/65
