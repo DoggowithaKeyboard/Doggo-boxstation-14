@@ -433,3 +433,13 @@
   id: 47
   time: '2026-01-05T04:42:24.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/69
+- author: CollectionOfBones128
+  changes:
+  - message: Overclocker, Thermal Paste, and Routine Maintenance have all had their
+      effects tweaked to be more useable
+    type: Tweak
+  - message: Degreaser now also removes Mechazine and Synthanol
+    type: Tweak
+  id: 48
+  time: '2026-01-05T05:01:59.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/70
