@@ -443,3 +443,14 @@
   id: 48
   time: '2026-01-05T05:01:59.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/70
+- author: Dinoguy12349
+  changes:
+  - message: Added Silipens, special medipens for IPCs to the uplink, medkits, and
+      IPC emergency boxes
+    type: Add
+  - message: IPC advanced topical kits now contain one less oil pack and instead include
+      a basic healing Silipen
+    type: Tweak
+  id: 49
+  time: '2026-01-06T07:34:09.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/71
