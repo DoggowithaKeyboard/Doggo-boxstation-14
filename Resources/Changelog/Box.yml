@@ -468,3 +468,10 @@
   id: 51
   time: '2026-01-08T23:01:28.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/73
+- author: SomegnihT
+  changes:
+  - message: IPCs now melt upon taking 2000 heat damage.
+    type: Tweak
+  id: 52
+  time: '2026-01-10T13:16:52.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/76
