@@ -42,6 +42,7 @@
             Brute: -0.5
             Burn: -0.5
       # Helps you stop bleeding to an extent.
+      - !type:ModifyBleed
       - !type:ModifyBleedAmount
       # Box Change Start - IPCs
         conditions:
@@ -106,7 +107,7 @@
       effects:
       - !type:SatiateHunger
         conditions:
-        - !type:ReagentThreshold #Only satiates when eaten with nutriment
+        - !type:ReagentCondition #Only satiates when eaten with nutriment
           reagent: Nutriment
           min: 0.1
         factor: 1
