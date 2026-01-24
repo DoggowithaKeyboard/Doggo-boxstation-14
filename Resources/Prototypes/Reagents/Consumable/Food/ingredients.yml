@@ -145,14 +145,13 @@
       - !type:Vomit
         probability: 0.1
         conditions:
+        # Box Change Start - IPCs
+          - !type:MetabolizerTypeCondition
+            type: [IPC]
+            inverted: false
+        # Box Change End
           - !type:ReagentCondition
             reagent: Vinegar
-        # Box Change Start - IPCs
-          - !type:OrganType
-            type: IPC
-            shouldHave: false
-        # Box Change End
-          - !type:ReagentThreshold
             min: 6
 
 - type: reagent

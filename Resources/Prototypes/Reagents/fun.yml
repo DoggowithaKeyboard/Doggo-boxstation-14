@@ -150,8 +150,8 @@
         - "buzzochloricbees-effect-squeaky-clean"
         probability: 0.1
         conditions:
-        - !type:HasTag
-          invert: true
+        - !type:TagCondition
+          inverted: true
           tag: Bee
       - !type:PopupMessage
         type: Local
@@ -163,10 +163,10 @@
           - "buzzochloricbees-effect-licoxide-buzzes"
         probability: 0.05
         conditions:
-        - !type:HasTag
-          invert: true
+        - !type:TagCondition
+          inverted: true
           tag: Bee
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           min: 0.01
           reagent: Licoxide
       - !type:PopupMessage
@@ -176,10 +176,10 @@
           - "buzzochloricbees-effect-fiber-soft"
         probability: 0.05
         conditions:
-        - !type:HasTag
-          invert: true
+        - !type:TagCondition
+          inverted: true
           tag: Bee
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           min: 0.01
           reagent: Fiber
       - !type:HealthChange
@@ -187,8 +187,8 @@
           types:
             Piercing: 2
         conditions:
-        - !type:HasTag
-          invert: true
+        - !type:TagCondition
+          inverted: true
           tag: Bee
     # Box Change End
 
@@ -279,6 +279,10 @@
         damage:
           types:
              Slash : 9
+      - !type:PopupMessage
+        type: Local
+        visualType: LargeCaution
+        messages: [ "generic-reagent-effect-slicing-insides"]
     # Box Change End
 
 - type: reagent
@@ -385,7 +389,7 @@
              Heat: -3 # ghetto burn chem. i don't think anyone would use this intentionally but it's funny
       - !type:PopupMessage
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Fresium
           max: 35
         type: Local
@@ -394,7 +398,7 @@
         probability: 0.05
       - !type:PopupMessage
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Fresium
           max: 35
         type: Local
@@ -403,26 +407,26 @@
         probability: 0.2
       - !type:AdjustTemperature
         conditions:
-        - !type:Temperature
+        - !type:TemperatureCondition
           min: 160.15 # not quite enough for cryo, but can speed it up if you wanna take the risk
         amount: -10000
-      - !type:MovespeedModifier
+      - !type:MovementSpeedModifier
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Fresium
           max: 40 # slows when less than 40
         walkSpeedModifier: 0.6
         sprintSpeedModifier: 0.6
-      - !type:MovespeedModifier
+      - !type:MovementSpeedModifier
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Fresium
           min: 40 # your legs stop working when above 40
         walkSpeedModifier: 0.00
         sprintSpeedModifier: 0.00
       - !type:PopupMessage
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Fresium
           min: 40
         type: Local

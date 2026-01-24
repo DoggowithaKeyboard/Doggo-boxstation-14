@@ -170,16 +170,8 @@
           reagent: Ethanol
           min: 15
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dwarf, IPC ] # Box Change - Add IPC metab tag
           inverted: true
-        - !type:OrganType
-          type: Dwarf
-          shouldHave: false
-        # Box Change Start - IPCs
-        - !type:OrganType
-          type: IPC
-          shouldHave: false
-        # Box Change End
         damage:
           types:
             Poison: 0.1
@@ -212,22 +204,14 @@
           min: 12
         # dwarves immune to vomiting from alcohol
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dwarf, IPC ] # Box Change - Add IPC metab tag
           inverted: true
-        - !type:OrganType
-          type: Dwarf
-          shouldHave: false
-        # Box Change Start - IPCs
-        - !type:OrganType
-          type: IPC
-          shouldHave: false
-        # Box Change End
       - !type:Drunk
         # Box Change Start - IPCs
         conditions:
-        - !type:OrganType
-          type: IPC
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+          inverted: false
         # Box Change End
         boozePower: 2
 
@@ -988,9 +972,9 @@
       - !type:HealthChange
         # Box Change Start - IPCs
         conditions:
-        - !type:OrganType
-          type: IPC
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+          inverted: false
         # Box Change End
         damage:
           groups:
@@ -2355,22 +2339,28 @@
           reagent: Mayojito
           min: 5
         # Box Change Start - IPCs
-        - !type:OrganType
-          type: IPC
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+          inverted: false
         # Box Change End
         probability: 0.5
       - !type:HealthChange
         # Box Change Start - IPCs
         conditions:
-        - !type:OrganType
-          type: IPC
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+          inverted: false
         # Box Change End
         damage:
           types:
             Poison: .5
       - !type:SatiateThirst
+        # Box Change Start - IPCs
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+          inverted: false
+        # Box Change End
         factor: 1
       - !type:AdjustReagent
         reagent: Ethanol
@@ -2565,9 +2555,9 @@
       - !type:Drunk
         # Box Change Start - IPCs
         conditions:
-        - !type:OrganType
-          type: IPC
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+          inverted: false
         # Box Change End
         boozePower: 10
       - !type:HealthChange
@@ -2576,16 +2566,8 @@
           reagent: BacchusBlessing
           min: 6
         - !type:MetabolizerTypeCondition
-          type: [Dwarf]
+          type: [Dwarf, IPC] # Box Change - Add IPC metab tag
           inverted: true
-        - !type:OrganType
-          type: Dwarf
-          shouldHave: false
-        # Box Change Start - IPCs
-        - !type:OrganType
-          type: IPC
-          shouldHave: false
-        # Box Change End
         damage:
           types:
             Poison: 0.2 # TODO: Figure out poison amount. Ethanol does 0.1, this does 0.2 but also metabolises almost 3 to 4 times as fast as ethanol. This would be more Liver damage when that time arrives.
@@ -2606,13 +2588,5 @@
           reagent: BacchusBlessing
           min: 8
         - !type:MetabolizerTypeCondition
-          type: [Dwarf]
+          type: [Dwarf, IPC] # Box Change - Add IPC metab tag
           inverted: true
-        - !type:OrganType
-          type: Dwarf
-          shouldHave: false
-        # Box Change Start - IPCs
-        - !type:OrganType
-          type: IPC
-          shouldHave: false
-        # Box Change End

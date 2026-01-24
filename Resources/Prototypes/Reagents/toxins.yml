@@ -174,6 +174,11 @@
         damage:
           types:
             Caustic: 11.0
+      - !type:PopupMessage
+        type: Local
+        visualType: Large
+        messages: [ "generic-reagent-effect-burning-insides" ]
+        probability: 0.33
     # Box Change End
 
 - type: reagent
@@ -243,6 +248,11 @@
         damage:
           types:
             Caustic: 8
+      - !type:PopupMessage
+        type: Local
+        visualType: Large
+        messages: [ "generic-reagent-effect-burning-insides" ]
+        probability: 0.33
     # Box Change End
 
 - type: reagent
@@ -301,6 +311,11 @@
         damage:
           types:
             Caustic: 5
+      - !type:PopupMessage
+        type: Local
+        visualType: Large
+        messages: [ "generic-reagent-effect-burning-insides" ]
+        probability: 0.33
     # Box Change End
 
 - type: reagent
@@ -508,13 +523,6 @@
             - !type:ReagentCondition
               reagent: Romerol
               min: 5
-    # Box Change Start: IPCs can now be affected by romerol injection
-    Industrial:
-      effects:
-        - !type:CauseZombieInfection
-          conditions:
-            - !type:ReagentThreshold
-              min: 5
     # Box change end
 
 - type: reagent
@@ -531,19 +539,8 @@
       - !type:PopupMessage
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Animal, Vox ]
+          type: [ Animal, Vox, IPC ] # Box Change - Add IPC metab tag
           inverted: true
-          - !type:OrganType
-            type: Animal
-            shouldHave: false
-          - !type:OrganType
-            type: Vox
-            shouldHave: false
-          # Box Change Start - IPCs
-          - !type:OrganType
-            type: IPC
-            shouldHave: false
-          # Box Change End
         type: Local
         visualType: MediumCaution
         messages: [ "generic-reagent-effect-sick" ]
@@ -552,35 +549,13 @@
         probability: 0.1
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Animal, Vox, Plant ]
+          type: [ Animal, Vox, Plant, IPC ] # Box Change - Add IPC metab tag
           inverted: true
-          - !type:OrganType
-            type: Animal
-            shouldHave: false
-          - !type:OrganType
-            type: Vox
-            shouldHave: false
-          # Box Change Start - IPCs
-          - !type:OrganType
-            type: IPC
-            shouldHave: false
-          # Box Change End
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Animal, Vox, Plant ]
+          type: [ Animal, Vox, Plant, IPC ] # Box Change - Add IPC metab tag
           inverted: true
-        - !type:OrganType
-          type: Animal
-          shouldHave: false
-        - !type:OrganType
-          type: Vox
-          shouldHave: false
-        # Box Change Start - IPCs
-        - !type:OrganType
-          type: IPC
-          shouldHave: false
-        # Box Change End
         damage:
           types:
             Poison: 1
@@ -650,14 +625,6 @@
       - !type:GenericStatusEffect
         key: Pacified
         component: Pacified
-        time: 4
-    # Box Change Start - IPC Chem
-    Industrial: # This should probably be its own Pax-derived Software chem, but fuck it.
-      effects:
-      - !type:GenericStatusEffect
-        key: Pacified
-        component: Pacified
-        type: Add
         time: 4
     # Box Change End
 
