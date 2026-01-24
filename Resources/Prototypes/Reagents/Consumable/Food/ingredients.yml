@@ -148,7 +148,7 @@
         # Box Change Start - IPCs
           - !type:MetabolizerTypeCondition
             type: [IPC]
-            inverted: false
+            inverted: true
         # Box Change End
           - !type:ReagentCondition
             reagent: Vinegar

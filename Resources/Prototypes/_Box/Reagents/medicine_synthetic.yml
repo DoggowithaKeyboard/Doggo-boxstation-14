@@ -401,7 +401,7 @@
         conditions:
         - !type:ReagentCondition
           reagent: SOISapphire
-            min: 20
+          min: 20
         damage:
           types:
             Shock: 1
@@ -416,7 +416,7 @@
           conditions:
         - !type:ReagentCondition
           reagent: SOISapphire
-            min: 9.5
+          min: 9.5
         - !type:MetabolizerTypeCondition
           type: [Synthetic]
           inverted: true

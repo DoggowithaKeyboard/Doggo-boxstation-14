@@ -80,7 +80,7 @@
         damage:
           types:
             Heat: 2
-      - !type:FlammableReaction
+      - !type:Flammable
         multiplier: 0.4
     # Box Change End
 
@@ -113,7 +113,7 @@
         damage:
           types:
             Heat: 3
-      - !type:FlammableReaction
+      - !type:Flammable
         multiplier: 0.1
       - !type:AdjustTemperature
         amount: 6000
@@ -159,7 +159,7 @@
           types:
             Heat: 2
             Caustic: 0.5
-      - !type:FlammableReaction
+      - !type:Flammable
         multiplier: 0.2
       - !type:AdjustTemperature
         amount: 6000
@@ -231,7 +231,7 @@
     # Box Change Start - IPC Chem
     Industrial:
       effects:
-      - !type:FlammableReaction
+      - !type:Flammable
         multiplier: 0.4
     # Box Change End
 

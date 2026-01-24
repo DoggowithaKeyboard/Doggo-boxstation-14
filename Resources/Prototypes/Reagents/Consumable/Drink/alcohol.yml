@@ -211,7 +211,7 @@
         conditions:
         - !type:MetabolizerTypeCondition
           type: [IPC]
-          inverted: false
+          inverted: true
         # Box Change End
         boozePower: 2
 
@@ -974,7 +974,7 @@
         conditions:
         - !type:MetabolizerTypeCondition
           type: [IPC]
-          inverted: false
+          inverted: true
         # Box Change End
         damage:
           groups:
@@ -2341,7 +2341,7 @@
         # Box Change Start - IPCs
         - !type:MetabolizerTypeCondition
           type: [IPC]
-          inverted: false
+          inverted: true
         # Box Change End
         probability: 0.5
       - !type:HealthChange
@@ -2349,7 +2349,7 @@
         conditions:
         - !type:MetabolizerTypeCondition
           type: [IPC]
-          inverted: false
+          inverted: true
         # Box Change End
         damage:
           types:
@@ -2359,7 +2359,7 @@
         conditions:
         - !type:MetabolizerTypeCondition
           type: [IPC]
-          inverted: false
+          inverted: true
         # Box Change End
         factor: 1
       - !type:AdjustReagent
@@ -2557,7 +2557,7 @@
         conditions:
         - !type:MetabolizerTypeCondition
           type: [IPC]
-          inverted: false
+          inverted: true
         # Box Change End
         boozePower: 10
       - !type:HealthChange

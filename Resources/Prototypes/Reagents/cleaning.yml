@@ -75,7 +75,7 @@
         # Box Change Start - IPCs
         - !type:MetabolizerTypeCondition
           type: [IPC]
-          inverted: false
+          inverted: true
         # Box Change End
         - !type:ReagentCondition
           reagent: SoapReagent
@@ -88,7 +88,7 @@
         # Box Change Start - IPCs
         - !type:MetabolizerTypeCondition
           type: [IPC]
-          inverted: false
+          inverted: true
         # Box Change End
         - !type:ReagentCondition
           reagent: SoapReagent
@@ -116,7 +116,7 @@
   metabolisms:
     Drink: # This way organics can filter it
       effects:
-      - !type:MovespeedModifier
+      - !type:MovementSpeedModifier
         conditions:
         - !type:MetabolizerTypeCondition
           type: [Synthetic]

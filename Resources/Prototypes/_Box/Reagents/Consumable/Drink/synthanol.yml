@@ -54,7 +54,7 @@
         conditions:
         - !type:MetabolizerTypeCondition
           type: [Synthetic]
-          inverted: false # For organics only
+          inverted: true # For organics only
         - !type:ReagentCondition
           reagent: Synthanol
           min: 0.5 # takes a bit to get going
