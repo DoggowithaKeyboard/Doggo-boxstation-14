@@ -37,24 +37,26 @@
       effects:
       - !type:HealthChange
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Synthanol
           min: 15
-        - !type:OrganType
-          type: Synthetic
+        - !type:MetabolizerTypeCondition
+          type: [Synthetic]
         damage:
           types:
             Shock: 1
       - !type:Drunk
         conditions:
-        - !type:OrganType
-          type: Synthetic
+        - !type:MetabolizerTypeCondition
+          type: [Synthetic]
         boozePower: 2 # TODO: Unique IPC slurred speech. Figure that out. Probably reuse Borg Damage accent?
       - !type:PopupMessage # no sanity/mood
         conditions:
-        - !type:OrganType
-          type: Synthetic
-          shouldHave: false # For organics only
-        - !type:ReagentThreshold
+        - !type:MetabolizerTypeCondition
+          type: [Synthetic]
+          inverted: false # For organics only
+        - !type:ReagentCondition
+          reagent: Synthanol
           min: 0.5 # takes a bit to get going
           max: 15 # Having too much of a good thing and all that...
         type: Local
