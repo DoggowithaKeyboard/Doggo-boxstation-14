@@ -34,6 +34,7 @@
   color: "#59768c"
   metabolisms:
     Alcohol:
+      metabolismRate: 0.05
       effects:
       - !type:HealthChange
         conditions:
@@ -44,7 +45,7 @@
           type: [Synthetic]
         damage:
           types:
-            Shock: 1
+            Shock: 0.1
       - !type:Drunk
         conditions:
         - !type:MetabolizerTypeCondition
