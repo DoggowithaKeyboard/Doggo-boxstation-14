@@ -66,7 +66,6 @@
   - type: Sprite
     sprite: Mobs/Species/Vox/organs.rsi
   # Box Change Start - SynthChem
-  - type: Sprite
     layers:
       - state: kidney-l
       - state: kidney-r
