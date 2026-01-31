@@ -41,7 +41,7 @@
       effects:
         - !type:HealthChange
           conditions:
-          - !type:Temperature
+          - !type:TemperatureCondition
             max: 180.0
           damage:
             types:
@@ -59,13 +59,14 @@
   metabolisms:
     Industrial:
       effects:
-      - !type:ModifyBleedAmount
+      - !type:ModifyBleed
         amount: -1.5
       - !type:AdjustTemperature
         conditions:
-        - !type:Temperature
+        - !type:TemperatureCondition
           max: 423.15
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Polydimethylsiloxane
           min: 15
         amount: 50000
     Poison:
@@ -78,7 +79,7 @@
         damage:
           types:
             Poison: 0.5
-      - !type:ChemVomit
+      - !type:Vomit
         conditions:
         - !type:MetabolizerTypeCondition
           type: [Synthetic]
@@ -108,7 +109,7 @@
           reagent: Overclocker
           min: 0
           max: 15
-        - !type:TotalDamage
+        - !type:TotalDamageCondition
           min: 80
         damage:
           types:
@@ -377,7 +378,7 @@
           types:
             Heat: 1.5
             Poison: 0.5
-      - !type:FlammableReaction
+      - !type:Flammable
         multiplier: 0.4
 
 # SOI Sapphire - Radiation Protection ("Silicon on Insulator Sapphire", used to shield components from radiation)
@@ -414,12 +415,12 @@
               Slash: 0.1 # Getting sapphire deposited inside you will probably cut you up
         - !type:HealthChange
           conditions:
-        - !type:ReagentCondition
-          reagent: SOISapphire
-          min: 9.5
-        - !type:MetabolizerTypeCondition
-          type: [Synthetic]
-          inverted: true
+          - !type:ReagentCondition
+            reagent: SOISapphire
+            min: 9.5
+          - !type:MetabolizerTypeCondition
+            type: [Synthetic]
+            inverted: true
           damage:
             types:
               Poison: 0.1
@@ -463,12 +464,12 @@
             Heat: -0.5
       - !type:AdjustTemperature
         conditions:
-        - !type:Temperature
+        - !type:TemperatureCondition
           max: 293.15
         amount: 100000 # thermal energy, not temperature!
       - !type:AdjustTemperature
         conditions:
-        - !type:Temperature
+        - !type:TemperatureCondition
           min: 293.15
         amount: -10000
       - !type:PopupMessage
@@ -486,7 +487,7 @@
         damage:
           types:
             Poison: 0.5
-      - !type:ChemVomit
+      - !type:Vomit
         conditions:
         - !type:MetabolizerTypeCondition
           type: [Vox]
@@ -512,7 +513,7 @@
       effects:
       - !type:HealthChange
         conditions:
-        - !type:Temperature
+        - !type:TemperatureCondition
           max: 180.0
         damage:
           groups:
@@ -535,7 +536,7 @@
       effects:
       - !type:HealthChange
         conditions:
-        - !type:Temperature
+        - !type:TemperatureCondition
           max: 180.0
         damage:
           groups:
@@ -561,7 +562,7 @@
       effects:
       - !type:HealthChange
         conditions:
-        - !type:Temperature
+        - !type:TemperatureCondition
           max: 180.0
         damage:
           types:
