@@ -365,4 +365,4 @@
           Heat: -0.02
           Blunt: -0.02
     - type: InjectableSolution # Box Change - IPC Chem
-      solution: chemicals
+      solution: bloodstream
