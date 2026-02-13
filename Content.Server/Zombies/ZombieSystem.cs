@@ -288,7 +288,7 @@ namespace Content.Server.Zombies
                     // Box Change End
 
                     // If the target is dead and can be infected, infect.
-                    if (!HasComp<SiliconComponent>(uid))
+                    if (!HasComp<SiliconComponent>(uid)) // Box Change - Add if-statement to make sure IPCs don't zombify
                     {
                         ZombifyEntity(uid);
                         args.Handled = true;

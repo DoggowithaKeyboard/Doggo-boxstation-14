@@ -21,11 +21,13 @@ public sealed partial class CauseZombieInfectionEntityEffectsSystem : EntityEffe
         {
             return;
         }
-        if (!HasComp<ZombieImmuneComponent>(entity) && HasComp<SiliconComponent>(entity)) // Zombie immune component check so it doesnt add the infected component every time
+        // Box Change Start - IPC Zeds)
+        if (!HasComp<ZombieImmuneComponent>(entity) && HasComp<SiliconComponent>(entity))
         {
             EnsureComp<InfectedIPCComponent>(entity);
         }
         else
+        // Box Change End
         {
             EnsureComp<ZombifyOnDeathComponent>(entity);
             EnsureComp<PendingZombieComponent>(entity);
