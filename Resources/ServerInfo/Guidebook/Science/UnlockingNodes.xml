@@ -1,8 +1,8 @@
 <Document>
   # Unlocking Nodes
   <Box>
-    <GuideEntityEmbed Entity="ComplexXAEXenoArtifact" Caption=""/>
-    <GuideEntityEmbed Entity="ComplexXAEXenoArtifactItem" Caption=""/>
+    <GuideEntityEmbed Entity="ComplexXAEXenoArtifact" Caption=""/> <!--Box Change - ComplexXenoArtifact > ComplexXAEXenoArtifact - Dual XenoArch-->
+    <GuideEntityEmbed Entity="ComplexXAEXenoArtifactItem" Caption=""/> <!--Box Change - ComplexXenoArtifactItem > ComplexXAEXenoArtifactItem - Dual XenoArch-->
   </Box>
 
   To activate and unlock nodes on an artifact, you should:
