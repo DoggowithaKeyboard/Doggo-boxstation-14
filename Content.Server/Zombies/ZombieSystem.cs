@@ -288,8 +288,12 @@ namespace Content.Server.Zombies
                     // Box Change End
 
                     // If the target is dead and can be infected, infect.
-                    ZombifyEntity(uid);
-                    args.Handled = true;
+                    if (!HasComp<SiliconComponent>(uid))
+                    {
+                        ZombifyEntity(uid);
+                        args.Handled = true;
+                    }
+
                 }
             }
         }

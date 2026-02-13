@@ -662,6 +662,15 @@
             - !type:ReagentCondition
               reagent: Ambuzol
               min: 10
+#Box Change Start - Lets IPCs metabolize Ambuzol
+    Industrial:
+      effects:
+        - !type:CureZombieInfection
+          conditions:
+            - !type:ReagentCondition
+              reagent: Ambuzol
+              min: 10
+#Box Change End - Lets IPCs metabolize Ambuzol
 
 - type: reagent
   id: AmbuzolPlus
@@ -680,6 +689,16 @@
             - !type:ReagentCondition
               reagent: AmbuzolPlus
               min: 5
+#Box Change Start - Lets IPCs metabolize Ambuzol+
+    Industrial:
+        effects:
+        - !type:CureZombieInfection
+          innoculate: true
+          conditions:
+            - !type:ReagentCondition
+              reagent: AmbuzolPlus
+              min: 5
+#Box Change End - Lets IPCs metabolize Ambuzol+
 
 - type: reagent
   id: PulpedBananaPeel

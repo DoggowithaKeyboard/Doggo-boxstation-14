@@ -1,6 +1,10 @@
 ﻿using Content.Shared.Mobs.Components;
 using Content.Shared.Zombies;
 using Robust.Shared.Prototypes;
+// Box Change starts - IPC Zed interaction
+using Content.Shared._EE.Silicon.Components;
+using Content.Shared._Box.Silicons;
+// Box Change ends
 
 namespace Content.Shared.EntityEffects.Effects;
 
@@ -14,10 +18,18 @@ public sealed partial class CauseZombieInfectionEntityEffectsSystem : EntityEffe
     protected override void Effect(Entity<MobStateComponent> entity, ref EntityEffectEvent<CauseZombieInfection> args)
     {
         if (HasComp<ZombieImmuneComponent>(entity) || HasComp<IncurableZombieComponent>(entity))
+        {
             return;
-
-        EnsureComp<ZombifyOnDeathComponent>(entity);
-        EnsureComp<PendingZombieComponent>(entity);
+        }
+        if (!HasComp<ZombieImmuneComponent>(entity) && HasComp<SiliconComponent>(entity)) // Zombie immune component check so it doesnt add the infected component every time
+        {
+            EnsureComp<InfectedIPCComponent>(entity);
+        }
+        else
+        {
+            EnsureComp<ZombifyOnDeathComponent>(entity);
+            EnsureComp<PendingZombieComponent>(entity);
+        }
     }
 }
 
@@ -38,7 +50,18 @@ public sealed partial class CureZombieInfectionEntityEffectsSystem : EntityEffec
 
         if (args.Effect.Innoculate)
             EnsureComp<ZombieImmuneComponent>(entity);
+        // Box Change starts - IPC Zed interaction
+        if (HasComp<SiliconComponent>(entity))
+        {
+            RemComp<InfectedIPCComponent>(entity);
+            if (args.Effect.Innoculate)
+            {
+                EnsureComp<ZombieImmuneComponent>(entity);
+            }
+        }
+        // Box Change ends
     }
+
 }
 
 /// <inheritdoc cref="EntityEffect"/>
