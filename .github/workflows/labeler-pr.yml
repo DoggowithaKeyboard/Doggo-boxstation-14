@@ -1,7 +1,7 @@
 ﻿name: "Labels: PR"
 
 on:
-- pull_request
+- pull_request_target
 
 jobs:
   labeler:
@@ -27,5 +27,5 @@ jobs:
       with:
         sync-labels: true
         # Add repository token because it kept breaking, Box change
-        repo-token: ${{ secrets.BOT_TOKEN }}
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
       # Harmony end
