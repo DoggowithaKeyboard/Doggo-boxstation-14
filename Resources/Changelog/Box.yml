@@ -490,3 +490,11 @@
   id: 54
   time: '2026-02-14T09:34:10.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/80
+- author: BlueMoon059
+  changes:
+  - message: Salvage job gear, such as crushers, mining suits, mass scanners, and
+      pka mods appear on debris again.
+    type: Add
+  id: 55
+  time: '2026-02-15T02:53:18.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/81
