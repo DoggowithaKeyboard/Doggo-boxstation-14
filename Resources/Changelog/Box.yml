@@ -475,3 +475,18 @@
   id: 52
   time: '2026-01-10T13:16:52.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/76
+- author: superjeepboy
+  changes:
+  - message: Fixed IPCs instantly draining their battery when standing still
+    type: Fix
+  id: 53
+  time: '2026-02-15T00:16:52.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/85
+- author: BlueMoon059
+  changes:
+  - message: Fixed some minor grammar errors in some IPC topical descriptions and
+      names.
+    type: Fix
+  id: 54
+  time: '2026-02-14T09:34:10.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/80
