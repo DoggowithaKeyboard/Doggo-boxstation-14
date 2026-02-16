@@ -512,3 +512,10 @@
   id: 57
   time: '2026-02-16T05:57:11.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/87
+- author: BlueMoon059
+  changes:
+  - message: Present anomalies no longer spawn unsafe/insane present variants.
+    type: Tweak
+  id: 58
+  time: '2026-02-16T11:47:10.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/88
