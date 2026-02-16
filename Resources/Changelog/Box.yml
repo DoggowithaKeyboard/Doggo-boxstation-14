@@ -505,3 +505,10 @@
   id: 56
   time: '2026-02-16T01:27:23.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/86
+- author: SomegnihT
+  changes:
+  - message: Screens no longer say KILL on EOR
+    type: Tweak
+  id: 57
+  time: '2026-02-16T05:57:11.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/87
