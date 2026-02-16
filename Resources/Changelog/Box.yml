@@ -498,3 +498,10 @@
   id: 55
   time: '2026-02-15T02:53:18.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/81
+- author: BlueMoon059
+  changes:
+  - message: Salv borgs and the AI have salvage comms, as they should have.
+    type: Fix
+  id: 56
+  time: '2026-02-16T01:27:23.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/86
