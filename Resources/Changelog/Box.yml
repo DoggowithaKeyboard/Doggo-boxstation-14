@@ -536,3 +536,10 @@
   id: 60
   time: '2026-02-17T09:18:05.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/90
+- author: Dinoguy12349
+  changes:
+  - message: Added the AAC tablet from Delta V
+    type: Add
+  id: 61
+  time: '2026-02-17T12:26:06.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/79
