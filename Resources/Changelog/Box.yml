@@ -526,3 +526,13 @@
   id: 59
   time: '2026-02-17T03:19:55.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/89
+- author: BlueMoon059
+  changes:
+  - message: Avalis now have unique sound effects for crying, coughing, gasping, and
+      dying.
+    type: Add
+  - message: Avalis have a species unique emote, allowing them to hiss agressively.
+    type: Add
+  id: 60
+  time: '2026-02-17T09:18:05.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/90
