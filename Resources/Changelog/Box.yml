@@ -560,3 +560,10 @@
   id: 63
   time: '2026-02-18T05:42:52.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/92
+- author: SomegnihT
+  changes:
+  - message: IPCs can now eat cloth & trash
+    type: Tweak
+  id: 64
+  time: '2026-02-18T06:41:44.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/93
