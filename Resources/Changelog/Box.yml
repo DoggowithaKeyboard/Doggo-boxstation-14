@@ -543,3 +543,20 @@
   id: 61
   time: '2026-02-17T12:26:06.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/79
+- author: BlueMoon059
+  changes:
+  - message: Thaven are now appearing in the Sector. Elven Humanoids with distant
+      relations to space carp, beholden to strange moods, and able to breathe any
+      gas as if it were oxygen.
+    type: Add
+  id: 62
+  time: '2026-02-17T12:34:44.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/77
+- author: SomegnihT
+  changes:
+  - message: IPCs with the numb trait will now have their health fixed to good despite
+      any damages that might actually exist.
+    type: Fix
+  id: 63
+  time: '2026-02-18T05:42:52.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/92
