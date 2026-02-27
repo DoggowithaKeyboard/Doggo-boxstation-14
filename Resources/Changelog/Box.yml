@@ -581,3 +581,10 @@
   id: 66
   time: '2026-02-20T07:11:00.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/82
+- author: CollectionOfBones128
+  changes:
+  - message: Loot spawns on the VGRoid again.
+    type: Fix
+  id: 67
+  time: '2026-02-27T18:24:57.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/98
