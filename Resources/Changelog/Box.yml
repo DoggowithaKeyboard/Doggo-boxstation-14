@@ -588,3 +588,11 @@
   id: 67
   time: '2026-02-27T18:24:57.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/98
+- author: BlueMoon059
+  changes:
+  - message: Added longcoats-  a new winter coat variant for all of command, CC, warden,
+      secoffs, paramedics, and anyone who can access a winterdrobe.
+    type: Add
+  id: 68
+  time: '2026-02-27T19:55:51.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/101
