@@ -475,3 +475,131 @@
   id: 52
   time: '2026-01-10T13:16:52.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/76
+- author: superjeepboy
+  changes:
+  - message: Fixed IPCs instantly draining their battery when standing still
+    type: Fix
+  id: 53
+  time: '2026-02-15T00:16:52.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/85
+- author: BlueMoon059
+  changes:
+  - message: Fixed some minor grammar errors in some IPC topical descriptions and
+      names.
+    type: Fix
+  id: 54
+  time: '2026-02-14T09:34:10.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/80
+- author: BlueMoon059
+  changes:
+  - message: Salvage job gear, such as crushers, mining suits, mass scanners, and
+      pka mods appear on debris again.
+    type: Add
+  id: 55
+  time: '2026-02-15T02:53:18.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/81
+- author: BlueMoon059
+  changes:
+  - message: Salv borgs and the AI have salvage comms, as they should have.
+    type: Fix
+  id: 56
+  time: '2026-02-16T01:27:23.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/86
+- author: SomegnihT
+  changes:
+  - message: Screens no longer say KILL on EOR
+    type: Tweak
+  id: 57
+  time: '2026-02-16T05:57:11.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/87
+- author: BlueMoon059
+  changes:
+  - message: Present anomalies no longer spawn unsafe/insane present variants.
+    type: Tweak
+  id: 58
+  time: '2026-02-16T11:47:10.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/88
+- author: SomegnihT
+  changes:
+  - message: IPCs with unrevivable will now actually be unrevivable
+    type: Fix
+  id: 59
+  time: '2026-02-17T03:19:55.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/89
+- author: BlueMoon059
+  changes:
+  - message: Avalis now have unique sound effects for crying, coughing, gasping, and
+      dying.
+    type: Add
+  - message: Avalis have a species unique emote, allowing them to hiss agressively.
+    type: Add
+  id: 60
+  time: '2026-02-17T09:18:05.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/90
+- author: Dinoguy12349
+  changes:
+  - message: Added the AAC tablet from Delta V
+    type: Add
+  id: 61
+  time: '2026-02-17T12:26:06.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/79
+- author: BlueMoon059
+  changes:
+  - message: Thaven are now appearing in the Sector. Elven Humanoids with distant
+      relations to space carp, beholden to strange moods, and able to breathe any
+      gas as if it were oxygen.
+    type: Add
+  id: 62
+  time: '2026-02-17T12:34:44.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/77
+- author: SomegnihT
+  changes:
+  - message: IPCs with the numb trait will now have their health fixed to good despite
+      any damages that might actually exist.
+    type: Fix
+  id: 63
+  time: '2026-02-18T05:42:52.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/92
+- author: SomegnihT
+  changes:
+  - message: IPCs can now eat cloth & trash
+    type: Tweak
+  id: 64
+  time: '2026-02-18T06:41:44.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/93
+- author: SomegnihT
+  changes:
+  - message: IPCs and Vox now get very minor healing from eating trash
+    type: Tweak
+  id: 65
+  time: '2026-02-19T03:54:59.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/94
+- author: DrWhoFan13
+  changes:
+  - message: Art credits have been added!
+    type: Add
+  id: 66
+  time: '2026-02-20T07:11:00.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/82
+- author: CollectionOfBones128
+  changes:
+  - message: Loot spawns on the VGRoid again.
+    type: Fix
+  id: 67
+  time: '2026-02-27T18:24:57.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/98
+- author: BlueMoon059
+  changes:
+  - message: Added longcoats-  a new winter coat variant for all of command, CC, warden,
+      secoffs, paramedics, and anyone who can access a winterdrobe.
+    type: Add
+  id: 68
+  time: '2026-02-27T19:55:51.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/101
+- author: DrWhoFan13
+  changes:
+  - message: Moon mantles, moon boots for your neck!
+    type: Add
+  id: 69
+  time: '2026-03-02T16:52:32.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/97
